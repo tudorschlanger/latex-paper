@@ -38,9 +38,9 @@
 
 \usepackage{titling}
 \pretitle{\begin{center}\bfseries\huge} 
-\renewcommand{\tamark}{}
-\setlength{\thanksmarkwidth}{0em}
-\setlength{\thanksmargin}{0em}
+% \renewcommand{\tamark}{}  % the line hides the asterisk mark produced by the \thanks command 
+% \setlength{\thanksmarkwidth}{0em}
+% \setlength{\thanksmargin}{0em}
 
 \usepackage{etoolbox}
 \AtBeginEnvironment{titlepage}{\setlength{\parindent}{0pt}}
@@ -147,3 +147,6 @@
 \newcommand{\available}[1]{\fancypagestyle{plain}{\fancyfoot[C]{\color{gray}\footnotesize Available at \url{#1}}}}
 \newcommand{\published}[2]{\fancypagestyle{plain}{\fancyfoot[C]{\footnotesize Published in \emph{#1}\;\textbullet\;Available at \url{#2}}}}
 
+% ---------- Subfiles -----------
+
+\usepackage{subfiles}
